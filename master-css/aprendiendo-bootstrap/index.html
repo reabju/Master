@@ -17,27 +17,38 @@
         <button class="btn btn-success">Hola soy un boton</button>
     </div>-->
 
-    <div class="container">
+    <div class="container border">
         <div class="row">
             <header id="header" class="col-12 bg-primary text-white p-2 pl-5">
                 <h1>Aprendiendo Boostrap</h1>
             </header>
-            <nav id="menu" class="col-12 bg-secondary text-white">
+            <nav id="menu" class="col-12 bg-secondary text-white d-none d-sm-none  d-md-block">
                 <ul class="row w-50">
-                    <li class="col">Inicio</li>
-                    <li class="col">Pagina 1</li>
-                    <li class="col">Pagina 2</li>
-                    <li class="col">Pagina 3</li>
-                    <li class="col">Contacto</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Inicio</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Pagina 1</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Pagina 2</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Pagina 3</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Contacto</li>
                 </ul>
             </nav>
 
             <section id="content" class="col-12">
                 <div class="row">
-                <section id="products" class="col-9 border">
+                <section id="products" class="col-12 col-sm-12 col-md-9 border">
                     <h2>Productos</h2>
                     <hr>
                     <div class="items">
+                        <div class="row">
+                            <div class="item col col-lg col-md-12 col-sm-12 bg-primary">
+                                Producto
+                            </div>
+                            <div class="item col col-lg col-md-6 col-sm-6 bg-warning">
+                                Producto
+                            </div>
+                            <div class="item col col-lg col-md-6 col-sm-6 bg-danger">
+                                Producto
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="item col bg-primary m-2">
                                 Producto
@@ -90,7 +101,7 @@
                         </div>
                     </div>
                 </section>
-                <aside class="col-3 border">
+                <aside class="col-3 border d-none d-sm-none d-md-block">
                     <h2>Barra Lateral</h2>
                     <div class="lateral row bg-light align-items-center">
                         <div class="col-4 bg-primary order-3">
