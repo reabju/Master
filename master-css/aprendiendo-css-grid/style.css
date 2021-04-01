@@ -2,15 +2,53 @@ body{
     font-family: sans-serif;
     text-align: center;
 }
+/*--------------------------Ejercicio Completo----------------------------------*/
 
+#website{
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    background: blue;
+    color: white;
+}
+
+#menu{
+    background: lightblue;
+    color: black;
+}
+
+#contenido{
+    background: #eee;
+}
+
+#contenido article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    background: orange;
+    color: white;
+}
+
+#pie-pagina{
+    background: black;
+    color: white;
+}
+
+/*------------------------------Ejemplos------------------------------*/
 .layout{
-    width: 1200px;
-    min-height: 400px;
+    width: 80%;
+    height: 600px;
     margin: 0px auto;
     /*Definir el contenerdor de layout*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr) 3fr;
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
     /*Espacio entr elementos grid*/
     grid-gap: 10px;
     padding: 10px;
@@ -38,21 +76,25 @@ body{
 }
 
 .layout .green{
+    grid-row-start: 2;
+    grid-row-end: 6;
     background: green;
 }
 
 .layout .pink{
-    grid-column: 1 / 3;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
     background: palevioletred;
 }
 
 .layout .orange{
+    grid-row: 3 / 5;
     background: orange;
 }
 
 .layout .lightblue{
     /*grid-column-start: 1;
     grid-column-end: 3;*/
-    grid-column: 1 / 4;
+    grid-column: 2 / 4;
     background: lightblue;
 }
